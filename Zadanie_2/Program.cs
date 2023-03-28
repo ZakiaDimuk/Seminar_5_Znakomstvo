@@ -4,16 +4,18 @@
 // [-4, -6, 89, 6] -> 0
 
 int[] array = GetRandomArray(7, 0, 99);
-Console.WriteLine($"[{String.Join(",",array)}]");
+Console.WriteLine($"[{String.Join(", ",array)}]");
 
 int sum = 0;
 int i = 1;
+
 while(i < array.Length)
 {
     sum = sum + array[i];
     i = i + 2;
 }
-Console.WriteLine($"Сумма = {sum}");
+Console.WriteLine($"Сумма элементов, стоящих на нечётных индексах = {sum}");
+
 // -------------------------------Общий метод-------------------------------------------
 int[] GetRandomArray(int size, int minValue, int maxValue)
 {
