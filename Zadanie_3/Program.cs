@@ -8,7 +8,9 @@ Console.WriteLine($"[{String.Join("; ", array)}]");
 
 double min = array[0];
 double max = array[0];
+
 int i = 1;
+
 while (i < array.Length)
 {
     if (max < array[i]) max = array[i];
